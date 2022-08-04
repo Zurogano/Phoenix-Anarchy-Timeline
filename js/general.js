@@ -7,7 +7,7 @@ var RANDOM_SIDES = false; // randomize side timeline events are on
 var CHRONOLOGICAL = true; // false for oldest first; true for newest first
 var YEAR_DIVIDERS = true; // false for no year dividers; true for year dividers
 var MONTH_DIVIDERS = true; // false for no month dividers; true for month dividers
-var DATA_FILES = ["events/2021/July.json", "events/2021/August.json", "events/2021/September.json", "events/2021/October.json", "events/2021/November.json", "events/2021/December.json", "events/2022/January.json", "events/2022/February.json", "events/2022/March.json", "events/2022/April.json", "events/2022/May.json", "events/2022/June.json", "events/2022/July.json", "events/2022/August.json"]; 
+var DATA_FILES = ["events/2021-events.json", "events/2022-events.json"]; 
 
 function openNav() {
     document.getElementById("sideBar").style.width = "250px";
