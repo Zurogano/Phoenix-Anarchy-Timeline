@@ -4,7 +4,7 @@ var COLOR_BY_MONTH = true; /* make all labels for the same year the same
 var RANDOM_COLORS = false; // randomize color of timeline labels
 var DEFAULT_COLOR = 0; // only works if RANDOM_COLORS is false
 var RANDOM_SIDES = false; // randomize side timeline events are on
-var CHRONOLOGICAL = true; // false for oldest first; true for newest first
+var CHRONOLOGICAL = false; // false for oldest first; true for newest first
 var YEAR_DIVIDERS = true; // false for no year dividers; true for year dividers
 var MONTH_DIVIDERS = true; // false for no month dividers; true for month dividers
 var DATA_FILES = ["events/2021-events.json", "events/2022-events.json"]; 
@@ -173,6 +173,7 @@ function loadedData(data)
 				lastYear + "</div>";
 		}
 
+		// TODO: figure out why months go in random order when there are many files
 		// month dividers and month side bar navigation links
 		if ( e["sDate"].replace(/[0-9 ,]/gi, '') != lastMonth){
 			yearCounter += 1;
