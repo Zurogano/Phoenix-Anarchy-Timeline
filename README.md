@@ -4,7 +4,7 @@
   <h1>Phoenix Anarchy Timeline</a></h1>
   <p>A place to learn about the history of Phoenix Anarchy.</p>
 
-  [Check out the timeline here!](https://cqb13.github.io/Wild-Anarchy-Timeline/)
+  [Check out the timeline here!](https://cqb13.github.io/Phoenix-Anarchy-Timeline/)
 </div>
 
 <hr />
