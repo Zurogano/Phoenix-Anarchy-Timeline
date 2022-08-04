@@ -1,0 +1,91 @@
+.mobile #container {
+	width: 95%;
+}
+
+.mobile #timeline {
+	left: 30%;
+	margin: 0px;
+}
+
+.mobile .divider {
+	margin: 0px;
+	left: 30%;	
+	right: auto;
+	margin-left: -60px;
+	font-size: 37px;
+	line-height: 60px;
+	height: 60px;
+	border-radius: 30px;
+}
+
+.mobile .infoDot {
+	left: 30%;
+	margin: 0px;
+	margin-left: -8px;
+}
+
+.mobile .infoDate {
+	text-align: right;
+	padding-right: 50px;
+	padding-left: 30px;
+	right: 0px;
+	font-size: 25px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 20px;
+	margin-top: -5px;
+	margin-right: -5px;
+}
+
+.mobile .level {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.mobile .event {
+	height: 315px;
+}
+
+.mobile .smallEvent {
+	height: 85px;
+}
+
+.mobile .info {
+	right: 0px !important;
+	left: auto !important;
+	height: 295px;
+}
+
+.mobile .smallEvent .info {
+	height: 65px;
+	line-height: 65px;
+}
+
+.mobile .info h1 {
+	font-size: 38px;
+}
+
+.mobile .info p {
+	font-size: 28px;
+	height: 215px;
+	margin-bottom: 0px;
+}
+
+.mobile .info h3 {
+	font-size: 28px;
+	line-height: 32px;
+	height: 32px;
+}
+
+.mobile .info {
+	width: 63%;
+}
+
+.mobile .info:after {
+	left: -14px;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent; 
+	border-right:15px solid #f4f4f4; 
+	border-left: 0px;
+	right: auto;
+}
