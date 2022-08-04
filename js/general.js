@@ -7,7 +7,7 @@ var RANDOM_SIDES = false; // randomize side timeline events are on
 var CHRONOLOGICAL = true; // false for oldest first; true for newest first
 var YEAR_DIVIDERS = true; // false for no year dividers; true for year dividers
 var MONTH_DIVIDERS = true; // false for no month dividers; true for month dividers
-var DATA_FILES = ["events/2021/July.json", "events/2021/August.json", "events/2021/September.json", "events/2021/October.json", "events/2021/November.json", "events/2021/December.json"]; 
+var DATA_FILES = ["events/2021/July.json", "events/2021/August.json", "events/2021/September.json", "events/2021/October.json", "events/2021/November.json", "events/2021/December.json", "events/2022/January.json", "events/2022/February.json", "events/2022/March.json", "events/2022/April.json", "events/2022/May.json", "events/2022/June.json", "events/2022/July.json", "events/2022/August.json"]; 
 
 function openNav() {
     document.getElementById("sideBar").style.width = "250px";
@@ -161,6 +161,18 @@ function loadedData(data)
 		dividerYearElem = false;
 		dividerMonthElem = false;
 		// add generated html code to document
+		year = e["date"].getFullYear();	
+		// year dividers and years to navigation list
+		if (e["date"].getFullYear() != lastYear) {
+			yearCounter += 1;
+			lastYear = e["date"].getFullYear();	
+
+			var dividerYearElem = "<div class=\"divider level\" style=\"" + 
+				"background: " + yearColor + "\" id=\"" + 
+				lastYear + "\">" +
+				lastYear + "</div>";
+		}
+
 		// month dividers and month side bar navigation links
 		if ( e["sDate"].replace(/[0-9 ,]/gi, '') != lastMonth){
 			yearCounter += 1;
@@ -174,25 +186,13 @@ function loadedData(data)
 
 			var dividerMonthElem = "<div class=\"divider level\" style=\"" +
 			"background: " + dividerColor + "\" id=\"" + 
-			e["sDate"].replace(/[0-9 ,]/gi, '') + "\">" + 
+			e["sDate"].replace(/[0-9 ,]/gi, '') + "-" + year + "\">" + 
 			e["sDate"].replace(/[0-9 ,]/gi, '') + "</div>";
 
-			// TODO: need to make it be able to tell the difference between years (goes to the months in a specific year)
 			// adds new months to navigation list
-			navElem = "<a href=#" + e["sDate"].replace(/[0-9 ,]/gi, '') + "\>" + 
-			 e["sDate"].replace(/[0-9 ,]/gi, '') + "\</a>";
+			navMonthElem = "<a href=#" + e["sDate"].replace(/[0-9 ,]/gi, '') + "-" + year + "\>" + 
+			 e["sDate"].replace(/[0-9 ,]/gi, '') + " " + year +"\</a>";
 
-		}
-
-		// year dividers
-		if (e["date"].getFullYear() != lastYear) {
-			yearCounter += 1;
-			lastYear = e["date"].getFullYear();	
-
-			var dividerYearElem = "<div class=\"divider level\" style=\"" + 
-				"background: " + yearColor + "\" id=\"" + 
-				lastYear + "\">" +
-				lastYear + "</div>";
 		}
 
 		var eventColor = randColor();
@@ -202,7 +202,6 @@ function loadedData(data)
 		}
 
 		if (e["description"] == "" && e["links"].length == 0)
-		//TODO: add an id to each event box that can be used to search for it (date or month)
 		{
 			elem = "<div class=\"level event smallEvent\">" + 
 					"<div class=\"infoDot\" style=\"background : " +
@@ -243,13 +242,10 @@ function loadedData(data)
 			container.append(dividerMonthElem);
 		}
 
-		navElem = $(navElem)
-
-		navList.append(navElem)
-
+		navMonthElem = $(navMonthElem)
+		navList.append(navMonthElem)
 
 		elem = $(elem)
-
 		container.append(elem);
 
 		maxDateWidth = Math.min(maxDateWidth, 
