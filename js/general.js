@@ -186,12 +186,12 @@ function loadedData(data)
 
 			var dividerMonthElem = "<div class=\"divider level\" style=\"" +
 			"background: " + dividerColor + "\" id=\"" + 
-			e["sDate"].replace(/[0-9 ,]/gi, '') + "-" + year + "\">" + 
-			e["sDate"].replace(/[0-9 ,]/gi, '') + "</div>";
+			lastMonth + "-" + year + "\">" + 
+			lastMonth + "</div>";
 
 			// adds new months to navigation list
-			navMonthElem = "<a href=#" + e["sDate"].replace(/[0-9 ,]/gi, '') + "-" + year + "\>" + 
-			 e["sDate"].replace(/[0-9 ,]/gi, '') + " " + year +"\</a>";
+			navMonthElem = "<a href=#" + lastMonth + "-" + year + "\>" + 
+			 lastMonth + " " + year +"\</a>";
 
 		}
 
