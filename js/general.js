@@ -3,6 +3,7 @@ var COLOR_BY_MONTH = true; /* make all labels for the same year the same
 							 color; overwrites RANDOM_COLORS */
 var RANDOM_COLORS = false; // randomize color of timeline labels
 var DEFAULT_COLOR = 0; // only works if RANDOM_COLORS is false
+var YEAR_COLOR = "rgb(73, 107, 190" // color of the year dividers
 var RANDOM_SIDES = false; // randomize side timeline events are on
 var CHRONOLOGICAL = false; // false for oldest first; true for newest first
 var YEAR_DIVIDERS = true; // false for no year dividers; true for year dividers
@@ -89,9 +90,6 @@ function loadedData(data) {
 	var yearCounter = -1;
 	var monthCounter = -1;
 
-	// year color here bc why not
-	var yearColor = "rgb(73, 107, 190)"
-
 	// change date strings to date objects
 	data = convertDates(data);
 
@@ -155,7 +153,7 @@ function loadedData(data) {
 			lastYear = e["date"].getFullYear();	
 
 			var dividerYearElem = "<div class=\"divider level\" style=\"" + 
-				"background: " + yearColor + "\" id=\"" + 
+				"background: " + YEAR_COLOR + "\" id=\"" + 
 				lastYear + "\">" +
 				lastYear + "</div>";
 		}
