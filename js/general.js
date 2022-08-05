@@ -29,30 +29,26 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 // number of requests left
 var requestsLeft = 0;
 
-function finishedLoading()
-{
+function finishedLoading() {
 	document.body.removeChild(document.getElementById("loadingMessage"));
 }
 
 var colors = ["#ca5454", "#e8a040", "#fcdd75", "#ebc59c"];
 
 // get a random integer in the range [0, max)
-function randint(max) 
-{
+function randint(max) {
 	return Math.floor(Math.random() * Math.floor(max));
 }
 
 // get a random color
-function randColor() 
-{
+function randColor() {
 	if (RANDOM_COLORS) return colors[randint(colors.length)];
 	else
 		return colors[DEFAULT_COLOR];
 }
 
 // function to format date to Month Date, Year
-function formatDate(date) 
-{
+function formatDate(date) {
 	var monthNames = [
 		"January", "February", "March",
 		"April", "May", "June", "July",
@@ -68,27 +64,22 @@ function formatDate(date)
 }
 
 // function to convert date strings to date objects
-function convertDates(data)
-{
-	for (i = 0; i < data.length; i++)
-	{
+function convertDates(data) {
+	for (i = 0; i < data.length; i++) {
 		var original = data[i]["date"]
 		data[i]["date"] = new Date(original);
-		if ("onlyYear" in data[i] && data[i]["onlyYear"])
-		{
+		if ("onlyYear" in data[i] && data[i]["onlyYear"]) {
 			data[i]["sDate"] = original;
 			data[i]["date"].setDate(data[i]["date"].getDate() + 1);
 		}
-		else
-		{
+		else {
 			data[i]["sDate"] = formatDate(data[i]["date"]);
 		}
 	}	
 	return data;
 }
 
-function loadedData(data)
-{
+function loadedData(data) {
 	var container = $("#container");
 	var navList = $("#monthsNav")
 
@@ -118,9 +109,8 @@ function loadedData(data)
 	var maxDateWidth = 99999;
 
 	// loop on each event to be added
-	data.forEach(function(e){
-		if (RANDOM_SIDES)
-		{
+	data.forEach(function(e) {
+		if (RANDOM_SIDES) {
 			// random int to decide which side to put event on
 			var i = randint(2);
 
@@ -128,15 +118,13 @@ function loadedData(data)
 			if (counter > 0 && i > 0) counter += 1;
 			else if (counter < 0 && i == 0) counter -= 1;
 			else counter = (i * 2 - 1);
-			if (Math.abs(counter) >= 3)
-			{
+			if (Math.abs(counter) >= 3) {
 				// flip i
 				i = (i == 0 ? 1 : 0);
 				counter = (i * 2 - 1);
 			}
 		}
-		else
-		{
+		else {
 			i = counter;	
 			counter += 1;
 		}
@@ -152,8 +140,7 @@ function loadedData(data)
 			links += "<span><a href=\"https://" + link[1] + "\">" + 
 					 link[0] + "</a></span>";
 		});
-		if (e["links"].length == 0)
-		{
+		if (e["links"].length == 0) {
 			links += "None";
 		}
 		links += "</h3>";
@@ -175,13 +162,13 @@ function loadedData(data)
 
 		// TODO: figure out why months go in random order when there are many files
 		// month dividers and month side bar navigation links
-		if ( e["sDate"].replace(/[0-9 ,]/gi, '') != lastMonth){
+		if ( e["sDate"].replace(/[0-9 ,]/gi, '') != lastMonth) {
 			yearCounter += 1;
 			monthCounter += 1;
 			lastMonth = e["sDate"].replace(/[0-9 ,]/gi, '')
 			var dividerColor = randColor();
 
-			if (COLOR_BY_MONTH){
+			if (COLOR_BY_MONTH) {
 				dividerColor = colors[monthCounter % colors.length];
 			}
 
@@ -202,8 +189,7 @@ function loadedData(data)
 			eventColor = colors[monthCounter % colors.length];
 		}
 
-		if (e["description"] == "" && e["links"].length == 0)
-		{
+		if (e["description"] == "" && e["links"].length == 0) {
 			elem = "<div class=\"level event smallEvent\">" + 
 					"<div class=\"infoDot\" style=\"background : " +
 					eventColor + "\">" + 
@@ -217,8 +203,7 @@ function loadedData(data)
 					"</div>" +
 					"</div>";
 		}
-		else
-		{
+		else {
 			elem = "<div class=\"level event\">" + 
 					"<div class=\"infoDot\" style=\"background : " +
 					eventColor + "\">" + 
@@ -235,11 +220,11 @@ function loadedData(data)
 					"</div>";
 		}
 
-		if (YEAR_DIVIDERS && dividerYearElem !== false){
+		if (YEAR_DIVIDERS && dividerYearElem !== false) {
 			container.append(dividerYearElem);
 		}
 
-		if (MONTH_DIVIDERS && dividerMonthElem !== false){
+		if (MONTH_DIVIDERS && dividerMonthElem !== false) {
 			container.append(dividerMonthElem);
 		}
 
@@ -255,8 +240,7 @@ function loadedData(data)
 	});
 
 	// do some visual adjustments for mobile
-	if (isMobile)
-	{
+	if (isMobile) {
 		// balance container alignment to center content
 		// calculate amount of unused space next to date labels
 		$("#body").css("marginLeft", 
@@ -266,15 +250,14 @@ function loadedData(data)
 	finishedLoading();
 }
 
-$(function(){
+$(function() {
 
 	// get window dimensions
 	windowDim = {x: $(window).width(), y: $(window).height()};
 
 	isMobile = isMobile || windowDim.x <= 950;
 
-	if (isMobile)
-	{
+	if (isMobile) {
 		$("body").addClass("mobile");
 	}	
 
@@ -284,24 +267,23 @@ $(function(){
 	requestsLeft = DATA_FILES.length;
 
 	// iterate through all data files to retrieve
-	DATA_FILES.forEach(function(file){
+	DATA_FILES.forEach(function(file) {
 		// asynchronous call to retrieve data
 		$.getJSON(file)
-			.done(function(d){
+			.done(function(d) {
 				// add response data to list
-				d.forEach(function(entry){
+				d.forEach(function(entry) {
 					retrievedData.push(entry);
 				});
 			})
-			.fail(function(jqxhr, textStatus, error){
+			.fail(function(jqxhr, textStatus, error) {
 				console.log("Couldn't load " + file);
 			})
-			.always(function(){
+			.always(function() {
 				requestsLeft -= 1;
 
 				// if all requests have finished
-				if (requestsLeft == 0)
-				{
+				if (requestsLeft == 0) {
 					console.log(retrievedData);
 					loadedData(retrievedData);
 				}
