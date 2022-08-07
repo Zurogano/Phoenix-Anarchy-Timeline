@@ -1,0 +1,42 @@
+name: "Timeline Suggestion"
+description: New events for the timline
+title: '[Timeline Suggestion]'
+labels: event
+body:
+  - type: textarea
+    id: title
+    attributes:
+      label: The name of the event
+      description: A clear description and concise name that descibes your event.
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the event
+      description: A clear description of the event (A date must be included).
+    validations:
+      required: true
+  - type: textarea
+    id: image
+    attributes:
+      label: Image
+      description: If you would like to add an image upload it here.
+    validations:
+      required: false
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Before submitting a suggestion
+      options:
+        - label: |
+            This wasn't already suggested and is not on the timeline
+            (I have checked all of the other suggestions)
+          required: true
+        - label: |
+            There is proof of this event that can be provided
+            (screenshots / videos are best)
+          required: true
+        - label: |
+            The information that is provided is acurate
+          required: true
