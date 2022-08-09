@@ -203,9 +203,21 @@
     },
 
     {
-        "name": "PA Timeline website was created",
+        "name": "The PA Timeline website was created",
         "description": "Created by: cqb13",
         "date": "8/4/22",
+        "links": []
+    },
+    {
+        "name": "The server updated to 1.19.1",
+        "description": "",
+        "date": "8/9/22",
+        "links": []
+    },
+    {
+        "name": "Bedrock hole trails were fixed",
+        "description": "",
+        "date": "8/9/22",
         "links": []
     }
 ]
