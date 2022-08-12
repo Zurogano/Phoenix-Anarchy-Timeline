@@ -150,7 +150,6 @@ function loadedData(data) {
 				lastYear + "</div>";
 		}
 
-		// TODO: figure out why months go in random order when there are many files
 		// month dividers and month side bar navigation links
 		if ( e["sDate"].replace(/[0-9 ,]/gi, '') != lastMonth) {
 			yearCounter += 1;
