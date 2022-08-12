@@ -20,6 +20,15 @@ body {
 	height: 10px;
 }
 
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding-top: 5px;	
+	padding-bottom: 30px;	
+	z-index: 1;
+}
+
 .header {
     background: rgb(73, 107, 190);
     padding: 1rem;
