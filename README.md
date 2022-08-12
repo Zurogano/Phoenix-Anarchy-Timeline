@@ -22,9 +22,3 @@ Server Changes || Any big changes to the server (MC version updates, dupes, host
 
 *Note: Events without a date will not be added*
 </pre>
-
-<h2>Things to add:</h2>
-<pre>
-Navigation bar seperation of months by year
-Search bar / Categories for events that can be searched for (griefs, group creations, server updates, etc)
-</pre>
