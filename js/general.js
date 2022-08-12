@@ -1,7 +1,7 @@
-window.onscroll = function() {myFunction()};
-
 var topBar = document.getElementById("topBar");
 var sticky = topBar.offsetTop;
+
+window.onscroll = function() {myFunction()};
 
 function myFunction() {
   if (window.pageYOffset > sticky) {
