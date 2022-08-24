@@ -8,7 +8,7 @@
     background-color: rgba(70, 105, 188, .95);
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 40px;
 }
   
 .sideNav a {
@@ -32,7 +32,7 @@
   margin-left: 50px;
 }
   
-@media screen and (max-height: 450px) {
-    .sideNav {padding-top: 15px;}
+@media screen and (max-height: 660px) {
+    .sideNav {padding-top: 10px;}
     .sideNav a {font-size: 18px;}
 }
