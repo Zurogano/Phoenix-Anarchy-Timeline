@@ -8,7 +8,7 @@ var RANDOM_SIDES = false; // randomize side timeline events are on
 var CHRONOLOGICAL = false; // false for oldest first; true for newest first
 var YEAR_DIVIDERS = true; // false for no year dividers; true for year dividers
 var MONTH_DIVIDERS = true; // false for no month dividers; true for month dividers
-var DATA_FILES = ["events/2021-events.json", "events/2022-events.json"]; 
+var DATA_FILES = ["events/events.json"]; 
 
 
 // https://stackoverflow.com/questions/3514784/what-is-the-best-way-to-detect-a-mobile-device-in-jquery
