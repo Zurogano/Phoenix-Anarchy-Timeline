@@ -8,7 +8,7 @@ var RANDOM_SIDES = false; // randomize side timeline events are on
 var CHRONOLOGICAL = false; // false for oldest first; true for newest first
 var YEAR_DIVIDERS = true; // false for no year dividers; true for year dividers
 var MONTH_DIVIDERS = true; // false for no month dividers; true for month dividers
-var DATA_FILES = ["events/events.json"]; 
+var DATA_FILES = ["events/events.json"]; // because bad code you can only have 1 file rn, if you add more files you risk the timeline breaking!
 
 
 // https://stackoverflow.com/questions/3514784/what-is-the-best-way-to-detect-a-mobile-device-in-jquery
@@ -79,7 +79,7 @@ function loadedData(data) {
 	// counter to make sure no more than 2 adjacent events go to same side
 	var counter = 0;
 
-	var yearCounter = -1;
+	var yearCounter = -1; // wtf
 	var monthCounter = -1;
 
 	// change date strings to date objects
@@ -93,8 +93,8 @@ function loadedData(data) {
 
 	container.append("<div id=\"timeline\"></div>");
 
-	var lastYear = null;
-	var lastMonth = null;
+	var currentYYear = null;
+	var currentMonth = null;
 
 	var maxDateWidth = 99999;
 
@@ -104,7 +104,7 @@ function loadedData(data) {
 			// random int to decide which side to put event on
 			var i = randint(2);
 
-			// ensure event isn't put on same side 3 times in a row
+			// ensure event isn't put on same side 2 times in a row
 			if (counter > 0 && i > 0) counter += 1;
 			else if (counter < 0 && i == 0) counter -= 1;
 			else counter = (i * 2 - 1);
@@ -124,10 +124,11 @@ function loadedData(data) {
 		var dateClass = (i % 2 == 0 ? 
 						 "leftDate" : "rightDate")
 
+		// TODO: if link but no description remove space used for description
 		// generate html code for links section
 		links = "<h3>"
 		e["links"].forEach(function(link){
-			links += "<span><a href=\"https://" + link[1] + "\">" + 
+			links += "<span><a href=\"" + link[1] + "\">" + 
 					 link[0] + "</a></span>";
 		});
 		if (e["links"].length == 0) {
@@ -140,21 +141,21 @@ function loadedData(data) {
 		// add generated html code to document
 		year = e["date"].getFullYear();	
 		// year dividers and years to navigation list
-		if (e["date"].getFullYear() != lastYear) {
+		if (e["date"].getFullYear() != currentYYear) {
 			yearCounter += 1;
-			lastYear = e["date"].getFullYear();	
+			currentYYear = e["date"].getFullYear();	
 
 			var dividerYearElem = "<div class=\"divider level\" style=\"" + 
 				"background: " + YEAR_COLOR + "\" id=\"" + 
-				lastYear + "\">" +
-				lastYear + "</div>";
+				currentYYear + "\">" +
+				currentYYear + "</div>";
 		}
 
 		// month dividers and month side bar navigation links
-		if ( e["sDate"].replace(/[0-9 ,]/gi, '') != lastMonth) {
+		if ( e["sDate"].replace(/[0-9 ,]/gi, '') != currentMonth) {
 			yearCounter += 1;
 			monthCounter += 1;
-			lastMonth = e["sDate"].replace(/[0-9 ,]/gi, '')
+			currentMonth = e["sDate"].replace(/[0-9 ,]/gi, '')
 			var dividerColor = randColor();
 
 			if (COLOR_BY_MONTH) {
@@ -163,12 +164,12 @@ function loadedData(data) {
 
 			var dividerMonthElem = "<div class=\"divider level\" style=\"" +
 			"background: " + dividerColor + "\" id=\"" + 
-			lastMonth + "-" + year + "\">" + 
-			lastMonth + "</div>";
+			currentMonth + "-" + year + "\">" + 
+			currentMonth + "</div>";
 
 			// adds new months to navigation list
-			navMonthElem = "<a href=#" + lastMonth + "-" + year + "\>" + 
-			 lastMonth + " " + year +"\</a>";
+			navMonthElem = "<a href=#" + currentMonth + "-" + year + "\>" + 
+			 currentMonth + " " + year +"\</a>";
 
 		}
 
