@@ -48,18 +48,7 @@ function randColor() {
 // function to format date to Month Date, Year
 function formatDate(date) {
   var monthNames = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
+    "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December",
   ];
 
   var day = date.getDate();
@@ -189,6 +178,7 @@ function loadedData(data) {
       eventColor = colors[monthCounter % colors.length];
     }
 
+    //TODO: add images
     if (e["description"] == "" && e["links"].length == 0) {
       elem =
         '<div class="level event smallEvent">' +
@@ -203,17 +193,17 @@ function loadedData(data) {
         "</div>";
     } else {
       elem =
-        '<div class="level event">' +
-        '<div class="infoDot" style="background : ' + eventColor + '">' +
-        '<div class="infoDate ' + dateClass +
-        '" style="background: ' + eventColor + '">' + e["sDate"] +
-        "</div>" +
-        "</div>" +
-        '<div class="info ' + dataClass + '" id=' + e["sDate"] + '">' +
-        "<h1>" + e["name"] + "</h1>" +
-        "<p>" + e["description"] + "</p>" + links +
-        "</div>" +
-        "</div>";
+      '<div class="level event">' +
+      '<div class="infoDot" style="background : ' + eventColor + '">' +
+      '<div class="infoDate ' + dateClass +
+      '" style="background: ' + eventColor + '">' + e["sDate"] +
+      "</div>" +
+      "</div>" +
+      '<div class="info ' + dataClass + '" id=' + e["sDate"] + '">' +
+      "<h1>" + e["name"] + "</h1>" +
+      "<p>" + e["description"] + "</p>" + links +
+      "</div>" +
+      "</div>";
     }
 
     if (YEAR_DIVIDERS && dividerYearElem !== false) {
