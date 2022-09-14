@@ -100,6 +100,7 @@ function loadedData(data) {
 
   // loop on each event to be added
   data.forEach(function (e) {
+    image = "";
     if (RANDOM_SIDES) {
       // random int to decide which side to put event on
       var i = randint(2);
@@ -131,6 +132,8 @@ function loadedData(data) {
       links += "None";
     }
     links += "</h3>";
+
+    console.log(e["images"])
 
     dividerYearElem = false;
     dividerMonthElem = false;
