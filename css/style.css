@@ -147,8 +147,23 @@ svg.footerIcon {
 	height: 165px;
 }
 
+.eventImage {
+	height: 400px;
+}
+
 .smallEvent {
 	height: 50px;
+}
+.smallEventImage {
+	height: 90px;
+}
+
+.largeEventImage {
+	height: 230px;
+}
+
+.image:hover {
+	scale: 1.1;
 }
 
 .info {
@@ -161,6 +176,16 @@ svg.footerIcon {
 
 .smallEvent .info {
 	height: 30px;
+	line-height: 30px;
+}
+
+.smallEventImage .info {
+	height: 70px;
+	line-height: 30px;
+}
+
+.largeEventImage .info {
+	height: 210px;
 	line-height: 30px;
 }
 
