@@ -19,8 +19,8 @@ function loadedData(data, loadedFiles) {
 
     e["images"].forEach(function (data) {
       image +=
-      '<a target="_blank" href="/Images/'+ data[0] +'">' +
-      '<img src="/Images/'+ data[0] +'" alt="Image '+ imageCount +'" width="'+ data[1] +'" height="'+ data[2] +'">';
+      '<a target="_blank" href="/images/'+ data[0] +'">' +
+      '<img src="/images/'+ data[0] +'" alt="Image '+ imageCount +'" width="'+ data[1] +'" height="'+ data[2] +'">';
     });
 
     elem =
