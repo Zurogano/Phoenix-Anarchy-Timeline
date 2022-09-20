@@ -1,7 +1,7 @@
 [
   {
     "name": "Phoenix Anarchy was started",
-    "image": "PAT.png",
+    "image": "",
     "description": "Phoenix anarchy (PA) was started by Dumbledore, to house the players from the recently shut down Nether Anarchy (NA). The server started on minecraft version 1.17.",
     "date": "7/10/21",
     "links": [
@@ -11,84 +11,84 @@
   },
   {
     "name": "Venomforce got the dragon egg",
-    "iamge": "",
+    "image": "",
     "description": "",
     "date": "7/10/21",
     "links": []
   },
   {
     "name": "The server reaches 60 people",
-    "iamge": "",
+    "image": "",
     "description": "Servers player slots are filled up on the first day.",
     "date": "7/10/21",
     "links": []
   },
   {
     "name": "The first wither spawned",
-    "iamge": "",
+    "image": "",
     "description": "Spawned by: Rareist",
     "date": "7/11/21",
     "links": []
   },
   {
     "name": "The first spawn trench was started",
-    "iamge": "",
+    "image": "First-Spawn-Trench.png",
     "description": "Made by: Alekath",
     "date": "7/15/21",
     "links": []
   },
   {
     "name": "The first nether hub was created",
-    "iamge": "",
+    "image": "First-Nether-Hub.png",
     "description": "",
     "date": "7/16/21",
     "links": []
   },
   {
     "name": "The server started to accept donations",
-    "iamge": "",
+    "image": "",
     "description": "",
     "date": "7/19/21",
     "links": []
   },
   {
     "name": "Server hit 100 players",
-    "iamge": "",
+    "image": "",
     "description": "",
     "date": "7/20/21",
     "links": []
   },
   {
     "name": "The world border was reached",
-    "iamge": "",
+    "image": "First-World-Border-Corner.png",
     "description": "TacticalSpoon was the first to reach the world border and the world border corner.",
     "date": "7/21/21",
     "links": []
   },
   {
     "name": "Apalo typed the entire Bee Movie script",
-    "iamge": "",
+    "image": "",
     "description": "",
     "date": "7/25/21",
     "links": []
   },
   {
     "name": "The Fraternity made the first spawn logo",
-    "iamge": "",
+    "image": "First-Spawn-Logo.png",
     "description": "The Fraternity made their logo, a teacup at spawn. It took an hour to build and used 117k obsidian.",
     "date": "7/29/21",
     "links": []
   },
   {
     "name": "The server hits 2000 unique joins",
-    "iamge": "",
+    "image": "",
     "description": "",
     "date": "7/30/21",
     "links": []
   },
   {
     "name": "The Fraternity withers spawn",
-    "iamge": "",
+    "image": "",
     "description": "In the event called \"The WIthering\" the Fraternity placed over 1000 withers at spawn.",
     "date": "7/30/21",
     "links": []
@@ -96,49 +96,49 @@
 
   {
     "name": "YouHuntHard bombs spawn",
-    "iamge": "",
+    "image": "Spawn-Bomb.png",
     "description": "Hunt used TNT dupers to destory a 125 x 4000 block area of spawn.",
     "date": "8/1/21",
     "links": []
   },
   {
     "name": "The clearing of nether spawn was started",
-    "iamge": "",
+    "image": "Bomb-Nether-Hub.png",
     "description": "The players PhD, EMOYEET, gappleupvegan, francyfranky, YouHuntHard, and Number81. Mined out bombed nether spawn.",
     "date": "8/2/21",
     "links": []
   },
   {
     "name": "The server laged so much it hit 2 players",
-    "iamge": "",
+    "image": "New-Low.png",
     "description": "",
     "date": "8/7/21",
     "links": []
   },
   {
     "name": "The first voting reward given to CCD",
-    "iamge": "",
+    "image": "First-Phoenix-Feather.png",
     "description": "Dumbledore gave a feather to CatCalledDog as a reward for voting.",
     "date": "8/9/21",
     "links": []
   },
   {
     "name": "The first spawn wall was completed",
-    "iamge": "",
+    "image": "First-Spawn-Wall.png",
     "description": "The Fraternity created a spawn wall out of lava casts.",
     "date": "8/10/21",
     "links": []
   },
   {
     "name": "Sleepylessons joined the server",
-    "iamge": "",
+    "image": "Sleepy!.png",
     "description": "",
     "date": "8/16/21",
     "links": []
   },
   {
     "name": "The server hits 4000 unique joins",
-    "iamge": "",
+    "image": "",
     "description": "",
     "date": "8/18/21",
     "links": []
@@ -146,42 +146,49 @@
 
   {
     "name": "Gnir Lleb and Horizon base is griefed",
-    "iamge": "",
+    "image": "",
     "description": "Griefed by: Venomforce",
     "date": "9/3/21",
     "links": [["Grief video", "https://youtu.be/Sw1iq7vBGgI"]]
   },
   {
     "name": "Nether Corp main base is griefed",
-    "iamge": "",
+    "image": "",
     "description": "Griefed by:  King_Pin, GoodNightTea, and can",
     "date": "9/4/21",
     "links": []
   },
   {
     "name": "PA Timeline discord hits 100 members",
-    "iamge": "",
+    "image": "",
     "description": "",
     "date": "9/5/21",
     "links": []
   },
   {
+    "name": "Cat Spawn Base was started!",
+    "image": "First-Cat-Spawn-Base.png",
+    "description": "Built by: IcatIcatI",
+    "date": "9/7/21",
+    "links": []
+  },
+  {
     "name": "End spawn clearing was started",
-    "iamge": "",
+    "image": "End-Spawn-Clear.png",
     "description": "Number81, ByLu, and YouHuntHard started blowing up the main end island.",
     "date": "9/8/21",
     "links": []
   },
   {
     "name": "Chat based voting rewards added",
-    "iamge": "",
+    "image": "",
     "description": "",
     "date": "9/13/21",
     "links": []
   },
   {
     "name": "All nether highways reached 10k nether",
-    "iamge": "",
+    "image": "",
     "description": "",
     "date": "9/30/21",
     "links": []
@@ -189,21 +196,21 @@
 
   {
     "name": "Fraternity spawn logo is griefed",
-    "iamge": "",
+    "image": "Frat-Spawn-Logo-Grief.png",
     "description": "",
     "date": "10/10/21",
     "links": []
   },
   {
     "name": "Terra Town Two is griefed",
-    "iamge": "",
+    "image": "",
     "description": "",
     "date": "10/13/21",
     "links": []
   },
   {
     "name": "The server hits 10,000 unique joins",
-    "iamge": "",
+    "image": "",
     "description": "",
     "date": "10/29/21",
     "links": []
@@ -211,35 +218,35 @@
 
   {
     "name": "The dragon egg was stolen",
-    "iamge": "",
+    "image": "Dragon-Egg-Was-Taken.png",
     "description": "While Lotion was being given the dragon egg achievement by Tyrannus, he logged off and did not return the egg.",
     "date": "11/5/21",
     "links": []
   },
   {
     "name": "Fraternity halloween server event",
-    "iamge": "",
+    "image": "First-Frat-Halloween-Event.png",
     "description": "",
     "date": "11/9/21",
     "links": []
   },
   {
     "name": "The PA dev server is launched",
-    "iamge": "",
+    "image": "",
     "description": "IP: dev.phoenixanarchy.com",
     "date": "11/17/21",
     "links": []
   },
   {
     "name": "The base Montsombre was started",
-    "iamge": "",
+    "image": "Montsombre-Start.png",
     "description": "Montsombre was a Fraternity spawn base.",
     "date": "11/27/21",
     "links": []
   },
   {
     "name": "Minecraft 1.18 released",
-    "iamge": "",
+    "image": "",
     "description": "The server did not update.",
     "date": "11/30/21",
     "links": []
@@ -247,7 +254,7 @@
 
   {
     "name": "CatCalledDog reached 100 subscribers",
-    "iamge": "",
+    "image": "",
     "description": "CCD a PA youtuber reached 100 subscribers.",
     "date": "12/26/21",
     "links": [
@@ -259,14 +266,14 @@
   },
   {
     "name": "Moderators were added to PA discord",
-    "iamge": "",
+    "image": "",
     "description": "",
     "date": "12/29/21",
     "links": []
   },
   {
     "name": "PA discord server reached 1k members",
-    "iamge": "",
+    "image": "",
     "description": "",
     "date": "12/31/21",
     "links": []
@@ -274,35 +281,35 @@
 
   {
     "name": "The nether world border was reached",
-    "iamge": "",
+    "image": "Nether-World-Border-Reached.png",
     "description": "CatCalledDog was the first to reach the nether world border.",
     "date": "1/11/22",
     "links": []
   },
   {
     "name": "A 4k Spawwn render made by Creeper0",
-    "iamge": "",
+    "image": "First-Big-Spawn-Render.png",
     "description": "",
     "date": "1/11/22",
     "links": []
   },
   {
     "name": "Login invincibility removed",
-    "iamge": "",
+    "image": "",
     "description": "Players will no longer be invincible when logging in next to another player.",
     "date": "1/12/22",
     "links": []
   },
   {
     "name": "Montsombre was griefed",
-    "iamge": "",
+    "image": "Montsombre-Grief.png",
     "description": "",
     "date": "1/12/22",
     "links": []
   },
   {
     "name": "Phoenix Anarcy updated to 1.18.1",
-    "iamge": "",
+    "image": "",
     "description": "Dumbledore posted in the PA timeline when the PA updated.",
     "date": "1/19/22",
     "links": [
@@ -314,35 +321,35 @@
   },
   {
     "name": "First 1.18 advancment",
-    "iamge": "",
+    "image": "First-1.18-Advancment.jpg",
     "description": "Made by: Mitch023",
     "date": "1/19/22",
     "links": []
   },
   {
     "name": "The Fraternity made a new spawn logo",
-    "iamge": "",
+    "image": "New-Frat-Spawn-Logo.png",
     "description": "The Fraternity constructed a new spawn logo with a teapot and text saying \"time for tea\".",
     "date": "1/24/22",
     "links": []
   },
   {
     "name": "0 tick totem popping fixed",
-    "iamge": "",
+    "image": "",
     "description": "",
     "date": "1/27/22",
     "links": []
   },
   {
     "name": "Dawnstar was griefed",
-    "iamge": "",
+    "image": "Dawnstar.png",
     "description": "The Fraternity base Dawnstar was griefed by. Darkkk, TheCierDier, SpicyRedPotato, ResperyMartin, 6chem, EDC, Gbns, SH1TEATIN_GOBLIN, nonsenese, and Otter.",
     "date": "1/28/22",
     "links": []
   },
   {
     "name": "Subterrania was griefed",
-    "iamge": "",
+    "image": "",
     "description": "The Fraternity base Subterrania was griefed by. Darkkk, TheCierDier, SpicyRedPotato, ResperyMartin, 6chem, EDC, Gbns, SH1TEATIN_GOBLIN, nonsenese, and Otter.",
     "date": "1/28/22",
     "links": []
@@ -350,21 +357,21 @@
 
   {
     "name": "Goblin city was griefed",
-    "iamge": "",
+    "image": "Goblin-City.png",
     "description": "grifed by: Radial and Melsidious",
     "date": "2/5/22",
     "links": []
   },
   {
     "name": "Insta mine was patched",
-    "iamge": "",
+    "image": "",
     "description": "",
     "date": "2/20/22",
     "links": []
   },
   {
     "name": "2/22/22",
-    "iamge": "",
+    "image": "",
     "description": "",
     "date": "2/22/22",
     "links": []
@@ -372,21 +379,21 @@
 
   {
     "name": "New spawn render was created",
-    "iamge": "",
+    "image": "New-Frat-Spawn-Logo.png",
     "description": "Created by: Sarduras",
     "date": "3/3/22",
     "links": [["Render", "https://youtu.be/VdaEK78OTGs"]]
   },
   {
     "name": "Another spawn render was created",
-    "iamge": "",
+    "image": "New-Spawn-Render.png",
     "description": "Created by: thebest9178",
     "date": "3/3/22",
     "links": []
   },
   {
     "name": "IcatIcatI takes a break from PA",
-    "iamge": "",
+    "image": "",
     "description": "IcatIcatI, the oldest member in the community leaves the server.",
     "date": "3/15/22",
     "links": []
@@ -394,14 +401,14 @@
 
   {
     "name": "The server uses Nether Anarchy map",
-    "iamge": "",
+    "image": "",
     "description": "",
     "date": "4/1/22",
     "links": []
   },
   {
     "name": "The server goes back to normal map",
-    "iamge": "",
+    "image": "",
     "description": "",
     "date": "4/2/22",
     "links": []
@@ -409,14 +416,14 @@
 
   {
     "name": "Alpha Outpost was griefed",
-    "iamge": "",
+    "image": "",
     "description": "The Fraternity base, Alpha Outpost was the first base on the server.",
     "date": "5/1/22",
     "links": []
   },
   {
     "name": "Donspawn 2 was griefed",
-    "iamge": "",
+    "image": "",
     "description": "",
     "date": "5/24/22",
     "links": []
@@ -424,35 +431,35 @@
 
   {
     "name": "The group TSA was started",
-    "iamge": "",
+    "image": "",
     "description": "",
     "date": "6/6/22",
     "links": []
   },
   {
     "name": "Minecraft 1.19 released",
-    "iamge": "",
+    "image": "",
     "description": "",
     "date": "6/7/22",
     "links": []
   },
   {
     "name": "Cat spawn base was rebuilt",
-    "iamge": "",
+    "image": "Final-Cat-Spawn-Base.png",
     "description": "Cat spawn base was rebuilt for the 4th time by IcatIcatI",
     "date": "6/12/22",
     "links": []
   },
   {
     "name": "The dev server updated to 1.19",
-    "iamge": "",
+    "image": "",
     "description": "",
     "date": "6/17/22",
     "links": []
   },
   {
     "name": "Sleepylessons spoted",
-    "iamge": "",
+    "image": "",
     "description": "Sleepylessons joined the PA discord",
     "date": "6/27/22",
     "links": []
@@ -460,49 +467,49 @@
 
   {
     "name": "The server updated to 1.19",
-    "iamge": "",
+    "image": "",
     "description": "",
     "date": "7/7/22",
     "links": []
   },
   {
     "name": "Glitch found by IcatIcatI",
-    "iamge": "",
+    "image": "Bad-Glitch.png",
     "description": "While traveling in the nether bedrock would be broken around the player in new chunks.",
     "date": "7/8/22",
     "links": []
   },
   {
     "name": "The servers 1 year anniversary!",
-    "iamge": "",
+    "image": "",
     "description": "",
     "date": "7/10/22",
     "links": []
   },
   {
     "name": "Fraternity has an anniversary party",
-    "iamge": "",
+    "image": "1-Year-Event.png",
     "description": "The Fraternity sets up a public event to celebrate the servers 1 year anniversary!",
     "date": "7/10/22",
     "links": []
   },
   {
     "name": "Dumbledore summoned a warden",
-    "iamge": "",
+    "image": "Warden.png",
     "description": "Dumbledore used commands to summon a warden at the anniversary party!",
     "date": "7/10/22",
     "links": []
   },
   {
     "name": "Donfuer base griefed",
-    "iamge": "",
+    "image": "Donfuer-Base-Griefed.png",
     "description": "Grifed by: Kn0t_mc and 86ac",
     "date": "7/27/22",
     "links": []
   },
   {
     "name": "The valley of carrots was griefed",
-    "iamge": "",
+    "image": "",
     "description": "Built by: sjokoboll, traviss_scottt, and mqqngo",
     "date": "7/29/22",
     "links": []
@@ -510,30 +517,37 @@
 
   {
     "name": "The PA Timeline website was created",
-    "iamge": "",
+    "image": "",
     "description": "Created by: cqb13",
     "date": "8/4/22",
     "links": []
   },
   {
     "name": "The server updated to 1.19.1",
-    "iamge": "",
+    "image": "",
     "description": "",
     "date": "8/9/22",
     "links": []
   },
   {
     "name": "Bedrock hole trails were fixed",
-    "iamge": "",
+    "image": "",
     "description": "",
     "date": "8/9/22",
     "links": []
   },
   {
     "name": "Nether spawn was covered in vines",
-    "iamge": "",
+    "image": "Nether-Vines.png",
     "description": "",
     "date": "8/20/22",
+    "links": []
+  },
+  {
+    "name": "Lemuria II was griefed",
+    "image": "",
+    "description": "Griefed by: 87ac, MrBreakNFix, Octaborg, acap__!",
+    "date": "9/13/22",
     "links": []
   }
 ]

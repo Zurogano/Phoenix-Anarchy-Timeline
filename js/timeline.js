@@ -121,16 +121,24 @@ function loadedData(data) {
     var dataClass = i % 2 == 0 ? "leftInfo" : "rightInfo";
     var dateClass = i % 2 == 0 ? "leftDate" : "rightDate";
 
-    // TODO: if link but no description remove space used for description
     // generate html code for links section
     links = "<h3>";
     e["links"].forEach(function (link) {
       links += '<span><a href="' + link[1] + '">' + link[0] + "</a></span>";
     });
-    if (e["links"].length == 0) {
-      links += "None";
-    }
     links += "</h3>";
+    if (e["links"].length == 0) {
+      links = "";
+    }
+
+    image =   
+        '<a target="_blank" href="/images/'+ e["image"] +'">' +
+        '<img class="image" src="/images/'+ e["image"] +'" alt="Image" width=70px height=50px>' + 
+        '</a>';
+
+    if (e["image"] == "") {
+      image = "";
+    }
 
     dividerYearElem = false;
     dividerMonthElem = false;
@@ -161,7 +169,7 @@ function loadedData(data) {
 
       var dividerMonthElem =
         '<div class="divider level" style="' + 
-		"background: " + dividerColor +
+		    "background: " + dividerColor +
         '" id="' +currentMonth + "-" + year +'">' +currentMonth +
         "</div>";
 
@@ -178,32 +186,34 @@ function loadedData(data) {
       eventColor = colors[monthCounter % colors.length];
     }
 
-    //TODO: add images
-    if (e["description"] == "" && e["links"].length == 0) {
-      elem =
-        '<div class="level event smallEvent">' +
-        '<div class="infoDot" style="background : ' + eventColor + '">' +
-        '<div class="infoDate ' + dateClass +
-        '" style="background: ' + eventColor + '">' + e["sDate"] +
-        "</div>" +
-        "</div>" +
-        '<div class="info ' + dataClass + '" id=' + e["sDate"] + '">' +
-        "<h1>" + e["name"] + "</h1>" +
-        "</div>" +
-        "</div>";
-    } else {
-      elem =
-      '<div class="level event">' +
+    base = 
       '<div class="infoDot" style="background : ' + eventColor + '">' +
       '<div class="infoDate ' + dateClass +
       '" style="background: ' + eventColor + '">' + e["sDate"] +
       "</div>" +
       "</div>" +
       '<div class="info ' + dataClass + '" id=' + e["sDate"] + '">' +
-      "<h1>" + e["name"] + "</h1>" +
-      "<p>" + e["description"] + "</p>" + links +
-      "</div>" +
-      "</div>";
+      "<h1>" + e["name"] + "</h1>";
+
+    description = "<p>" + e["description"] + "</p>";
+
+    // wtf am i doing???
+    if (e["description"] == "" && e["links"].length == 0 && image == "") {
+      elem =
+        '<div class="level event smallEvent">' +
+        base;
+    } else if (e["description"] == "" && e["links"].length == 0 && image != "") {
+      elem =
+        '<div class="level event smallEventImage">' +
+        base + image;
+    } else if (e["description"] != "" && e["links"].length == 0 && image != "") {
+      elem =
+        '<div class="level event largeEventImage">' +
+        base + image + description;
+    } else {
+      elem =
+        '<div class="level event">' +
+        base + description + links;
     }
 
     if (YEAR_DIVIDERS && dividerYearElem !== false) {

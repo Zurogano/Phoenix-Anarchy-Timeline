@@ -1,329 +1,354 @@
 body {
-	margin: 0px;
-	font-family: "Ubuntu", sans-serif;
-	font-weight: 300;
+  margin: 0px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
 }
 
 #body {
-	width: 100%;
+  width: 100%;
 }
 
 ::-webkit-scrollbar {
-	width: 0px;
+  width: 0px;
 }
 
 .topBar {
-	background-color: #496bbe;
-	color: #fff;
-	justify-content: space-between;
-	height: 10px;
+  background-color: #496bbe;
+  color: #fff;
+  justify-content: space-between;
+  height: 10px;
 }
 
 .sticky {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	padding-bottom: 30px;
-	z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-bottom: 30px;
+  z-index: 1;
 }
 
 #openSide {
-	margin: 1rem;
+  margin: 1rem;
 }
 
 .progress-container {
-	width: 100%;
-	height: 16px;
+  width: 100%;
+  height: 16px;
 }
 
 .progress-bar {
-	height: 16px;
-	background: rgb(75, 108, 190, 0.7);
-	width: 100%;
+  height: 16px;
+  background: rgb(75, 108, 190, 0.7);
+  width: 100%;
 }
 
 .header {
-	background: #496bbe;
-	padding: 1rem;
-	color: #fff;
-	display: flex;
-	font-size: 30px;
+  background: #496bbe;
+  padding: 1rem;
+  color: #fff;
+  display: flex;
+  font-size: 30px;
 }
 
 .headerTitle {
-	margin-left: auto;
-	margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer {
-	background: #496bbe;
-	padding: 1rem;
-	color: #fff;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	font-size: 16px;
+  background: #496bbe;
+  padding: 1rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
 }
 
 svg.footerIcon {
-	height: 24px;
-	fill: #fff;
+  height: 24px;
+  fill: #fff;
 }
 
 #loadingMessage {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	background: #ffffff;
-	top: 0px;
-	left: 0px;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  top: 0px;
+  left: 0px;
 }
 
 #loadingMessage:after {
-	content: "Loading...";
-	position: fixed;
-	line-height: 50px;
-	height: 50px;
-	top: 0px;
-	bottom: 0px;
-	width: 100%;
-	text-align: center;
-	margin: auto;
-	font-size: 25px;
+  content: "Loading...";
+  position: fixed;
+  line-height: 50px;
+  height: 50px;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  font-size: 25px;
 }
 
 #container {
-	width: 900px;
-	margin: auto;
-	position: relative;
-	left: 0px;
-	right: 0px;
-	top: 50px;
-	margin-bottom: 120px;
+  width: 900px;
+  margin: auto;
+  position: relative;
+  left: 0px;
+  right: 0px;
+  top: 50px;
+  margin-bottom: 120px;
 }
 
 #timeline {
-	width: 14px;
-	background: #e8e8e8;
-	border-radius: 7px;
-	height: 100%;
-	padding: 20px 0px;
-	position: absolute;
-	top: -20px;
-	left: 0px;
-	right: 0px;
-	margin: auto;
-	z-index: -1;
+  width: 14px;
+  background: #e8e8e8;
+  border-radius: 7px;
+  height: 100%;
+  padding: 20px 0px;
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  z-index: -1;
 }
 
 .divider {
-	position: relative;
-	width: 350px;
-	height: 30px;
-	line-height: 30px;
-	border-radius: 15px;
-	background: #ffffff;
-	left: 0px;
-	right: 0px;
-	margin: auto;
-	text-align: center;
-	font-weight: normal;
+  position: relative;
+  width: 350px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  background: #ffffff;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  text-align: center;
+  font-weight: normal;
 }
 
 .level {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 .level:nth-of-type(2) {
-	margin-top: 0px;
+  margin-top: 0px;
 }
 .level:last-of-type {
-	margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .event {
-	height: 165px;
+  height: 165px;
+}
+
+.eventImage {
+  height: 400px;
 }
 
 .smallEvent {
-	height: 50px;
+  height: 50px;
+}
+.smallEventImage {
+  height: 105px;
+}
+
+.largeEventImage {
+  height: 230px;
+}
+
+.image:hover {
+  scale: 1.1;
 }
 
 .info {
-	background: #f4f4f4;
-	padding: 10px;
-	width: 390px;
-	height: 145px;
-	position: absolute;
+  background: #f4f4f4;
+  padding: 10px;
+  width: 390px;
+  height: 145px;
+  position: absolute;
 }
 
 .smallEvent .info {
-	height: 30px;
-	line-height: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.smallEventImage .info {
+  height: 85px;
+  line-height: 30px;
+}
+
+.largeEventImage .info {
+  height: 210px;
+  line-height: 30px;
 }
 
 .info.leftInfo {
-	left: 0px;
+  left: 0px;
 }
 
 .info.rightInfo {
-	right: 0px;
+  right: 0px;
 }
 
 .info:after,
 .info:before {
-	content: "";
-	display: block;
-	width: 0;
-	height: 0;
-	position: absolute;
-	top: 0px;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0px;
 }
 
 .info:before {
-	background: #f4f4f4;
-	width: 5px;
-	height: 30px;
-	border-radius: 2px;
+  background: #f4f4f4;
+  width: 5px;
+  height: 30px;
+  border-radius: 2px;
 }
 
 .info.leftInfo:before {
-	right: -15px;
-	margin-right: 14px;
+  right: -15px;
+  margin-right: 14px;
 }
 
 .info.leftInfo:after {
-	right: -15px;
-	border-top: 15px solid transparent;
-	border-bottom: 15px solid transparent;
-	border-left: 15px solid #f4f4f4;
+  right: -15px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #f4f4f4;
 }
 
 .info.rightInfo:before {
-	left: -15px;
-	margin-left: 14px;
+  left: -15px;
+  margin-left: 14px;
 }
 
 .info.rightInfo:after {
-	left: -15px;
-	border-top: 15px solid transparent;
-	border-bottom: 15px solid transparent;
-	border-right: 15px solid #f4f4f4;
+  left: -15px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #f4f4f4;
 }
 
 .infoDate {
-	position: absolute;
-	top: 0px;
-	line-height: 30px;
-	border-radius: 15px;
-	white-space: nowrap;
-	font-size: 13px;
-	font-weight: 500;
+  position: absolute;
+  top: 0px;
+  line-height: 30px;
+  border-radius: 15px;
+  white-space: nowrap;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 .infoDot {
-	position: absolute;
-	content: "";
-	display: block;
-	width: 30px;
-	height: 30px;
-	border-radius: 15px;
-	background: #bababa;
-	left: 0px;
-	right: 0px;
-	margin: auto;
-	top: 0px;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background: #bababa;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  top: 0px;
 }
 
 .infoDot:after {
-	position: absolute;
-	content: "";
-	display: block;
-	width: 18px;
-	height: 18px;
-	border-radius: 9px;
-	background: #ffffff;
-	left: 0px;
-	right: 0px;
-	top: 0px;
-	bottom: 0px;
-	margin: auto;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  background: #ffffff;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
 }
 
 .leftDate {
-	text-align: left;
-	padding-right: 20px;
-	padding-left: 35px;
+  text-align: left;
+  padding-right: 20px;
+  padding-left: 35px;
 }
 
 .rightDate {
-	text-align: right;
-	padding-right: 35px;
-	padding-left: 20px;
-	right: 0px;
+  text-align: right;
+  padding-right: 35px;
+  padding-left: 20px;
+  right: 0px;
 }
 
 .info h1 {
-	font-size: 20px;
-	padding: 0px;
-	margin: 0px;
-	margin-bottom: 5px;
-	font-weight: 500;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	display: block;
-	width: 100%;
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  width: 100%;
 }
 
 .info p {
-	margin: 0px;
-	padding: 0px;
-	height: 95px;
-	overflow: hidden;
-	margin-bottom: 5px;
-	text-overflow: ellipsis;
-	font-weight: 300;
+  margin: 0px;
+  padding: 0px;
+  height: 95px;
+  overflow: hidden;
+  margin-bottom: 5px;
+  text-overflow: ellipsis;
+  font-weight: 300;
 }
 
 .info h3 {
-	margin: 0px;
-	padding: 0px;
-	font-size: 15px;
-	font-weight: 300;
-	position: relative;
-	height: 18px;
-	line-height: 18px;
-	overflow: hidden;
-	text-overflow: hidden;
-	white-space: nowrap;
+  margin: 0px;
+  padding: 0px;
+  font-size: 15px;
+  font-weight: 300;
+  position: relative;
+  height: 18px;
+  line-height: 18px;
+  overflow: hidden;
+  text-overflow: hidden;
+  white-space: nowrap;
 }
 
 .info h3:before {
-	content: "Links:";
-	font-weight: 300;
-	margin-right: 10px;
+  content: "Links:";
+  font-weight: 300;
+  margin-right: 10px;
 }
 
 .info h3 span a {
-	color: black !important;
-	text-decoration: none !important;
-	font-weight: 500;
+  color: black !important;
+  text-decoration: none !important;
+  font-weight: 500;
 }
 
 .info h3 span:after {
-	content: "";
-	display: inline-block;
-	width: 6px;
-	height: 6px;
-	border-radius: 3px;
-	background: black;
-	margin: 0px 15px;
-	vertical-align: middle;
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background: black;
+  margin: 0px 15px;
+  vertical-align: middle;
 }
 
 .info h3 span:last-child:after {
-	display: none;
+  display: none;
 }
