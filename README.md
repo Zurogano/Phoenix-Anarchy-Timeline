@@ -1,6 +1,6 @@
 <div align="center">
   <!-- Logo and Title -->
-  <img src="PAT.png" alt="logo" width="20%"/>
+  <img src="./images/PAT.png" alt="logo" width="20%"/>
   <h1>Phoenix Anarchy Timeline</a></h1>
   <p>A place to learn about the history of Phoenix Anarchy.</p>
 
