@@ -8,7 +8,7 @@ var RANDOM_SIDES = false; // randomize side timeline events are on
 var CHRONOLOGICAL = false; // false for oldest first; true for newest first
 var YEAR_DIVIDERS = true; // false for no year dividers; true for year dividers
 var MONTH_DIVIDERS = true; // false for no month dividers; true for month dividers
-var DATA_FILES = ["events/events.json"]; // because bad code you can only have 1 file rn, if you add more files you risk the timeline breaking!
+var DATA_FILES = ["data/events.json"]; // because bad code you can only have 1 file rn, if you add more files you risk the timeline breaking!
 
 // https://stackoverflow.com/questions/3514784/what-is-the-best-way-to-detect-a-mobile-device-in-jquery
 var isMobile = false,
