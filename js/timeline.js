@@ -140,6 +140,15 @@ function loadedData(data) {
       image = "";
     }
 
+    image =   
+        '<a target="_blank" href="/images/'+ e["image"] +'">' +
+        '<img class="image" src="/images/'+ e["image"] +'" alt="Image" width=50px height=50px>' + 
+        '</a>';
+
+    if (e["image"] == "") {
+      image = "";
+    }
+
     dividerYearElem = false;
     dividerMonthElem = false;
     // add generated html code to document
