@@ -151,10 +151,6 @@ svg.footerIcon {
   height: 400px;
 }
 
-.eventImage {
-	height: 400px;
-}
-
 .smallEvent {
   height: 50px;
 }
@@ -168,17 +164,6 @@ svg.footerIcon {
 
 .image:hover {
   scale: 1.1;
-}
-.smallEventImage {
-	height: 90px;
-}
-
-.largeEventImage {
-	height: 230px;
-}
-
-.image:hover {
-	scale: 1.1;
 }
 
 .info {
@@ -202,16 +187,6 @@ svg.footerIcon {
 .largeEventImage .info {
   height: 210px;
   line-height: 30px;
-}
-
-.smallEventImage .info {
-	height: 70px;
-	line-height: 30px;
-}
-
-.largeEventImage .info {
-	height: 210px;
-	line-height: 30px;
 }
 
 .info.leftInfo {
