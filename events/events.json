@@ -18,7 +18,7 @@
   },
   {
     "name": "The server reaches 60 people",
-    "iamge": "PAT.png",
+    "image": "",
     "description": "Servers player slots are filled up on the first day.",
     "date": "7/10/21",
     "links": []
@@ -32,14 +32,14 @@
   },
   {
     "name": "The first spawn trench was started",
-    "image": "",
+    "image": "First-Spawn-Trench.png",
     "description": "Made by: Alekath",
     "date": "7/15/21",
     "links": []
   },
   {
     "name": "The first nether hub was created",
-    "image": "",
+    "image": "First-Nether-Hub.png",
     "description": "",
     "date": "7/16/21",
     "links": []
@@ -60,7 +60,7 @@
   },
   {
     "name": "The world border was reached",
-    "image": "",
+    "image": "First-World-Border-Corner.png",
     "description": "TacticalSpoon was the first to reach the world border and the world border corner.",
     "date": "7/21/21",
     "links": []
@@ -74,7 +74,7 @@
   },
   {
     "name": "The Fraternity made the first spawn logo",
-    "image": "",
+    "image": "First-Spawn-Logo.png",
     "description": "The Fraternity made their logo, a teacup at spawn. It took an hour to build and used 117k obsidian.",
     "date": "7/29/21",
     "links": []
@@ -96,42 +96,42 @@
 
   {
     "name": "YouHuntHard bombs spawn",
-    "image": "",
+    "image": "Spawn-Bomb.png",
     "description": "Hunt used TNT dupers to destory a 125 x 4000 block area of spawn.",
     "date": "8/1/21",
     "links": []
   },
   {
     "name": "The clearing of nether spawn was started",
-    "image": "",
+    "image": "Bomb-Nether-Hub.png",
     "description": "The players PhD, EMOYEET, gappleupvegan, francyfranky, YouHuntHard, and Number81. Mined out bombed nether spawn.",
     "date": "8/2/21",
     "links": []
   },
   {
     "name": "The server laged so much it hit 2 players",
-    "image": "",
+    "image": "New-Low.png",
     "description": "",
     "date": "8/7/21",
     "links": []
   },
   {
     "name": "The first voting reward given to CCD",
-    "image": "",
+    "image": "First-Phoenix-Feather.png",
     "description": "Dumbledore gave a feather to CatCalledDog as a reward for voting.",
     "date": "8/9/21",
     "links": []
   },
   {
     "name": "The first spawn wall was completed",
-    "image": "",
+    "image": "First-Spawn-Wall.png",
     "description": "The Fraternity created a spawn wall out of lava casts.",
     "date": "8/10/21",
     "links": []
   },
   {
     "name": "Sleepylessons joined the server",
-    "image": "",
+    "image": "Sleepy!.png",
     "description": "",
     "date": "8/16/21",
     "links": []
@@ -166,8 +166,15 @@
     "links": []
   },
   {
+    "name": "Cat Spawn Base was started!",
+    "image": "First-Cat-Spawn-Base.png",
+    "description": "Built by: IcatIcatI",
+    "date": "9/7/21",
+    "links": []
+  },
+  {
     "name": "End spawn clearing was started",
-    "image": "",
+    "image": "End-Spawn-Clear.png",
     "description": "Number81, ByLu, and YouHuntHard started blowing up the main end island.",
     "date": "9/8/21",
     "links": []
@@ -189,7 +196,7 @@
 
   {
     "name": "Fraternity spawn logo is griefed",
-    "image": "",
+    "image": "Frat-Spawn-Logo-Grief.png",
     "description": "",
     "date": "10/10/21",
     "links": []
@@ -211,14 +218,14 @@
 
   {
     "name": "The dragon egg was stolen",
-    "image": "",
+    "image": "Dragon-Egg-Was-Taken.png",
     "description": "While Lotion was being given the dragon egg achievement by Tyrannus, he logged off and did not return the egg.",
     "date": "11/5/21",
     "links": []
   },
   {
     "name": "Fraternity halloween server event",
-    "image": "",
+    "image": "First-Frat-Halloween-Event.png",
     "description": "",
     "date": "11/9/21",
     "links": []
@@ -232,7 +239,7 @@
   },
   {
     "name": "The base Montsombre was started",
-    "image": "",
+    "image": "Montsombre-Start.png",
     "description": "Montsombre was a Fraternity spawn base.",
     "date": "11/27/21",
     "links": []
@@ -274,14 +281,14 @@
 
   {
     "name": "The nether world border was reached",
-    "image": "",
+    "image": "Nether-World-Border-Reached.png",
     "description": "CatCalledDog was the first to reach the nether world border.",
     "date": "1/11/22",
     "links": []
   },
   {
     "name": "A 4k Spawwn render made by Creeper0",
-    "image": "",
+    "image": "First-Big-Spawn-Render.png",
     "description": "",
     "date": "1/11/22",
     "links": []
@@ -295,7 +302,7 @@
   },
   {
     "name": "Montsombre was griefed",
-    "image": "",
+    "image": "Montsombre-Grief.png",
     "description": "",
     "date": "1/12/22",
     "links": []
@@ -314,14 +321,14 @@
   },
   {
     "name": "First 1.18 advancment",
-    "image": "",
+    "image": "First-1.18-Advancment.jpg",
     "description": "Made by: Mitch023",
     "date": "1/19/22",
     "links": []
   },
   {
     "name": "The Fraternity made a new spawn logo",
-    "image": "",
+    "image": "New-Frat-Spawn-Logo.png",
     "description": "The Fraternity constructed a new spawn logo with a teapot and text saying \"time for tea\".",
     "date": "1/24/22",
     "links": []
@@ -335,7 +342,7 @@
   },
   {
     "name": "Dawnstar was griefed",
-    "image": "",
+    "image": "Dawnstar.png",
     "description": "The Fraternity base Dawnstar was griefed by. Darkkk, TheCierDier, SpicyRedPotato, ResperyMartin, 6chem, EDC, Gbns, SH1TEATIN_GOBLIN, nonsenese, and Otter.",
     "date": "1/28/22",
     "links": []
@@ -350,7 +357,7 @@
 
   {
     "name": "Goblin city was griefed",
-    "image": "",
+    "image": "Goblin-City.png",
     "description": "grifed by: Radial and Melsidious",
     "date": "2/5/22",
     "links": []
@@ -372,14 +379,14 @@
 
   {
     "name": "New spawn render was created",
-    "image": "",
+    "image": "New-Frat-Spawn-Logo.png",
     "description": "Created by: Sarduras",
     "date": "3/3/22",
     "links": [["Render", "https://youtu.be/VdaEK78OTGs"]]
   },
   {
     "name": "Another spawn render was created",
-    "image": "",
+    "image": "New-Spawn-Render.png",
     "description": "Created by: thebest9178",
     "date": "3/3/22",
     "links": []
@@ -438,7 +445,7 @@
   },
   {
     "name": "Cat spawn base was rebuilt",
-    "image": "",
+    "image": "Final-Cat-Spawn-Base.png",
     "description": "Cat spawn base was rebuilt for the 4th time by IcatIcatI",
     "date": "6/12/22",
     "links": []
@@ -467,7 +474,7 @@
   },
   {
     "name": "Glitch found by IcatIcatI",
-    "image": "",
+    "image": "Bad-Glitch.png",
     "description": "While traveling in the nether bedrock would be broken around the player in new chunks.",
     "date": "7/8/22",
     "links": []
@@ -481,21 +488,21 @@
   },
   {
     "name": "Fraternity has an anniversary party",
-    "image": "",
+    "image": "1-Year-Event.png",
     "description": "The Fraternity sets up a public event to celebrate the servers 1 year anniversary!",
     "date": "7/10/22",
     "links": []
   },
   {
     "name": "Dumbledore summoned a warden",
-    "image": "",
+    "image": "Warden.png",
     "description": "Dumbledore used commands to summon a warden at the anniversary party!",
     "date": "7/10/22",
     "links": []
   },
   {
     "name": "Donfuer base griefed",
-    "image": "",
+    "image": "Donfuer-Base-Griefed.png",
     "description": "Grifed by: Kn0t_mc and 86ac",
     "date": "7/27/22",
     "links": []
@@ -531,7 +538,7 @@
   },
   {
     "name": "Nether spawn was covered in vines",
-    "image": "",
+    "image": "Nether-Vines.png",
     "description": "",
     "date": "8/20/22",
     "links": []
