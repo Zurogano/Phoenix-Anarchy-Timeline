@@ -126,10 +126,19 @@ function loadedData(data) {
     e["links"].forEach(function (link) {
       links += '<span><a href="' + link[1] + '">' + link[0] + "</a></span>";
     });
+    links += "</h3>";
     if (e["links"].length == 0) {
       links = "";
     }
-    links += "</h3>";
+
+    image =   
+        '<a target="_blank" href="/images/'+ e["image"] +'">' +
+        '<img class="image" src="/images/'+ e["image"] +'" alt="Image" width=70px height=50px>' + 
+        '</a>';
+
+    if (e["image"] == "") {
+      image = "";
+    }
 
     image =   
         '<a target="_blank" href="/images/'+ e["image"] +'">' +
@@ -195,7 +204,7 @@ function loadedData(data) {
       '<div class="info ' + dataClass + '" id=' + e["sDate"] + '">' +
       "<h1>" + e["name"] + "</h1>";
 
-    link = "<p>" + e["description"] + "</p>" + links ;
+    description = "<p>" + e["description"] + "</p>";
 
     // wtf am i doing???
     if (e["description"] == "" && e["links"].length == 0 && image == "") {
@@ -206,14 +215,14 @@ function loadedData(data) {
       elem =
         '<div class="level event smallEventImage">' +
         base + image;
-    } else if (e["description"] != "" && e["links"].length != 0 && image != "") {
+    } else if (e["description"] != "" && e["links"].length == 0 && image != "") {
       elem =
         '<div class="level event largeEventImage">' +
-        base + image + link;
+        base + image + description;
     } else {
       elem =
         '<div class="level event">' +
-        base + link;
+        base + description + links;
     }
 
     if (YEAR_DIVIDERS && dividerYearElem !== false) {
