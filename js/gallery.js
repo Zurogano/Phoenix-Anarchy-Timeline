@@ -19,7 +19,7 @@ function loadedData(data, loadedFiles) {
 
     e["images"].forEach(function (data) {
       image +=
-      '<a target="_blank" href="../images/'+ data[0] +'">' +
+      '<a onclick=showImagePopup("../images/'+ data[0] +'")>' +
       '<img src="../images/'+ data[0] +'" alt="Image '+ imageCount +'" width="'+ data[1] +'" height="'+ data[2] +'">';
     });
 

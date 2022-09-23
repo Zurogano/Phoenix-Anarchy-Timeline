@@ -86,18 +86,65 @@ svg.footerIcon:hover {
   fill: #000;
 }
 
+.image-popup {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.733);
+  margin-top: -1px;
+  animation: zoom 0.3s ease-in-out;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.popup-content {
+  display: flex;
+  padding-top: 5%;
+  margin: auto auto auto auto;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3;
+}
+
+.close:hover,
+.close:focus {
+  color: #496bbe;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .popup-content {
+    width: 100%;
+  }
+}
+
 #gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 1rem;
   gap: 5px;
 }
 
-.gallery-image {
-  margin: 1rem;
-}
-
 .gallery-image:hover {
-  scale: 1.1;
+  scale: 1.01;
   transition: 400ms;
 }

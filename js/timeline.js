@@ -122,7 +122,6 @@ function loadedData(data) {
     var dateClass = i % 2 == 0 ? "leftDate" : "rightDate";
 
     // generate html code for links section
-    // TODO: make it say "link" if 1 link and "links" if more than 1
     links = "<h3>";
     e["links"].forEach(function (link) {
       links += '<span><a href="' + link[1] + '">' + link[0] + "</a></span>";
@@ -133,7 +132,7 @@ function loadedData(data) {
     }
 
     image =   
-        '<a target="_blank" href="/images/'+ e["image"] +'">' +
+        '<a onclick=showImagePopup("/images/'+ e["image"] +'")>' +
         '<img class="image" src="/images/'+ e["image"] +'" alt="Image" width=70px height=50px>' + 
         '</a>';
 
