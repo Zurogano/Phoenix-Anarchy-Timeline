@@ -48,7 +48,9 @@ function randColor() {
 // function to format date to Month Date, Year
 function formatDate(date) {
   var monthNames = [
-    "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December",
+    "January", "February", "March", "April",
+    "May", "June", "July", "August", "September",
+    "October", "November", "December",
   ];
 
   var day = date.getDate();
@@ -131,10 +133,10 @@ function loadedData(data) {
       links = "";
     }
 
-    image =   
-        '<a onclick=showImagePopup("/images/'+ e["image"] +'")>' +
-        '<img class="image" src="/images/'+ e["image"] +'" alt="Image" width=70px height=50px>' + 
-        '</a>';
+    image =
+      '<a onclick=showImagePopup("/images/' + e["image"] + '")>' +
+      '<img class="image" src="/images/' + e["image"] + '" alt="Image" width=70px height=50px>' +
+      "</a>";
 
     if (e["image"] == "") {
       image = "";
@@ -150,10 +152,7 @@ function loadedData(data) {
       currentYYear = e["date"].getFullYear();
 
       var dividerYearElem =
-        '<div class="divider level" style="' +
-        "background: " + YEAR_COLOR +
-        '" id="' + currentYYear + '">' + currentYYear +
-        "</div>";
+        '<div class="divider level" style="' + "background: " + YEAR_COLOR + '" id="' + currentYYear +'">' + currentYYear + "</div>";
     }
 
     // month dividers and month side bar navigation links
@@ -168,16 +167,11 @@ function loadedData(data) {
       }
 
       var dividerMonthElem =
-        '<div class="divider level" style="' + 
-		    "background: " + dividerColor +
-        '" id="' +currentMonth + "-" + year +'">' +currentMonth +
-        "</div>";
+        '<div class="divider level" style="' + "background: " + dividerColor + '" id="' + currentMonth + "-" + year + '">' + currentMonth + "</div>";
 
       // adds new months to navigation list
       navMonthElem =
-        "<a href=#" + currentMonth + "-" + year + ">" +
-        currentMonth + " " + year +
-        "</a>";
+        "<a href=#" + currentMonth + "-" + year + ">" + currentMonth + " " + year + "</a>";
     }
 
     var eventColor = randColor();
@@ -186,10 +180,10 @@ function loadedData(data) {
       eventColor = colors[monthCounter % colors.length];
     }
 
-    base = 
-      '<div class="infoDot" style="background : ' + eventColor + '">' +
-      '<div class="infoDate ' + dateClass +
-      '" style="background: ' + eventColor + '">' + e["sDate"] +
+    base =
+      '<div class="infoDot" style="background : ' + eventColor +'">' +
+      '<div class="infoDate ' + dateClass + '" style="background: ' + eventColor + '">' +
+      e["sDate"] +
       "</div>" +
       "</div>" +
       '<div class="info ' + dataClass + '" id=' + e["sDate"] + '">' +
@@ -199,21 +193,13 @@ function loadedData(data) {
 
     // wtf am i doing???
     if (e["description"] == "" && e["links"].length == 0 && image == "") {
-      elem =
-        '<div class="level event smallEvent">' +
-        base;
+      elem = '<div class="level event smallEvent">' + base;
     } else if (e["description"] == "" && e["links"].length == 0 && image != "") {
-      elem =
-        '<div class="level event smallEventImage">' +
-        base + image;
+      elem = '<div class="level event smallEventImage">' + base + image;
     } else if (e["description"] != "" && e["links"].length == 0 && image != "") {
-      elem =
-        '<div class="level event largeEventImage">' +
-        base + image + description;
+      elem = '<div class="level event largeEventImage">' + base + image + description;
     } else {
-      elem =
-        '<div class="level event">' +
-        base + description + links;
+      elem = '<div class="level event">' + base + description + links;
     }
 
     if (YEAR_DIVIDERS && dividerYearElem !== false) {

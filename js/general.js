@@ -32,7 +32,6 @@ function closeNav() {
   document.getElementById("sideBar").style.width = "0";
 }
 
-//TODO: fix style
 function showImagePopup(file) {
   var popupImg = document.getElementById("img01");
 
@@ -42,10 +41,10 @@ function showImagePopup(file) {
   body.style.overflow = "hidden";
 }
 
-hidePopup.onclick = function() { 
+hidePopup.onclick = function () {
   popup.style.display = "none";
   body.style.overflow = "auto";
-}
+};
 
 function hideImagePopup() {
   document.getElementById("image-popup").style.display = "none";

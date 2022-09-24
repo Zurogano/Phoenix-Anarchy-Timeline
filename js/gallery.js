@@ -14,20 +14,15 @@ function loadedData(data, loadedFiles) {
   // loop on each project to be added
   data.forEach(function (e) {
     imageCount += 1;
-    loadedFiles -= 1
-    image = ""
+    loadedFiles -= 1;
 
     e["images"].forEach(function (data) {
-      image +=
-      '<a onclick=showImagePopup("../images/'+ data[0] +'")>' +
-      '<img src="../images/'+ data[0] +'" alt="Image '+ imageCount +'" width="'+ data[1] +'" height="'+ data[2] +'">';
+      image =
+        '<a onclick=showImagePopup("../images/' + data[0] + '")>' +
+        '<img src="../images/' + data[0] + '" alt="Image ' + imageCount + '" width="' + data[1] + '" height="' + data[2] + '">';
     });
 
-    elem =
-    '<div class="gallery-image">' +
-    image +
-    '</a>' +
-    '</div>'
+    elem = '<div class="gallery-image">' + image + "</a>" + "</div>";
 
     projectElem = $(elem);
     container.append(projectElem);

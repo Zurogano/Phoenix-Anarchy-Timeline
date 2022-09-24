@@ -109,6 +109,8 @@ svg.footerIcon:hover {
 
 .popup-content {
   display: flex;
+  max-width: 80%;
+  max-height: 80%;
   padding-top: 5%;
   margin: auto auto auto auto;
 }
@@ -141,6 +143,7 @@ svg.footerIcon:hover {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   gap: 5px;
 }
 
