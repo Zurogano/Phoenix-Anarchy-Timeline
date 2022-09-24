@@ -20,10 +20,6 @@
   transition: 0.3s;
 }
 
-.sideNav a:hover {
-  color: #000;
-}
-
 .sideNav .closeBtn {
   position: absolute;
   top: 0;

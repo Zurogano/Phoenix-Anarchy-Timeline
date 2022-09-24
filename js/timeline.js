@@ -171,7 +171,7 @@ function loadedData(data) {
 
       // adds new months to navigation list
       navMonthElem =
-        "<a href=#" + currentMonth + "-" + year + ">" + currentMonth + " " + year + "</a>";
+        "<a class=gradient-text href=#" + currentMonth + "-" + year + ">" + currentMonth + " " + year + "</a>";
     }
 
     var eventColor = randColor();

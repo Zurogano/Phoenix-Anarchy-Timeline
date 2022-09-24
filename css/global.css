@@ -13,15 +13,11 @@ body {
 }
 
 .topBar {
+  padding-top: 10px;
   background-color: #496bbe;
   color: #f5f7fa;
   justify-content: space-between;
   height: 10px;
-}
-
-a:hover {
-  color: #000;
-  transition: 0.3s;
 }
 
 .sticky {
@@ -30,10 +26,6 @@ a:hover {
   width: 100%;
   padding-bottom: 30px;
   z-index: 1;
-}
-
-#open-side {
-  margin-left: 1rem;
 }
 
 .switch-page {
@@ -49,8 +41,8 @@ a:hover {
 }
 
 .progress-bar {
-  height: 16px;
-  background: rgb(75, 108, 190, 0.7);
+  height: 20px;
+  background: rgba(75, 108, 190, 0.7);
   width: 100%;
 }
 
@@ -80,10 +72,6 @@ a:hover {
 svg.footerIcon {
   height: 24px;
   fill: #f5f7fa;
-}
-
-svg.footerIcon:hover {
-  fill: #000;
 }
 
 .image-popup {
@@ -125,13 +113,6 @@ svg.footerIcon:hover {
   transition: 0.3;
 }
 
-.close:hover,
-.close:focus {
-  color: #496bbe;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 @media only screen and (max-width: 700px) {
   .popup-content {
     width: 100%;
@@ -150,4 +131,29 @@ svg.footerIcon:hover {
 .gallery-image:hover {
   scale: 1.01;
   transition: 400ms;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #ca5454, #e8a040, #fcdd75, #ebc59c);
+  background-size: 200% 200%;
+  animation: rainbow 2s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: color 0.2s ease-in-out;
+}
+
+.gradient-text:hover {
+  color: rgba(0, 0, 0, 0);
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
 }
