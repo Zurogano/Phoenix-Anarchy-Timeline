@@ -16,7 +16,7 @@ function scroll() {
     topBar.classList.remove("sticky");
   }
 
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var winScroll = document.documentElement.scrollTop;
   var height =
     document.documentElement.scrollHeight -
     document.documentElement.clientHeight;
@@ -26,13 +26,18 @@ function scroll() {
 
 function openNav() {
   document.getElementById("sideBar").style.width = "250px";
-  body.style.overflow = "hidden";
+  body.style.overflow = "hidden"
 }
 
 function closeNav() {
   document.getElementById("sideBar").style.width = "0";
-  body.style.overflow = "auto";
+  body.style.overflow = "auto"
 }
+
+hidePopup.onclick = function () {
+  popup.style.display = "none";
+  body.style.overflow = "auto";
+};
 
 function showImagePopup(file) {
   var popupImg = document.getElementById("img01");
@@ -41,13 +46,4 @@ function showImagePopup(file) {
   popupImg.src = file;
 
   body.style.overflow = "hidden";
-}
-
-hidePopup.onclick = function () {
-  popup.style.display = "none";
-  body.style.overflow = "auto";
-};
-
-function hideImagePopup() {
-  document.getElementById("image-popup").style.display = "none";
 }
