@@ -5,7 +5,7 @@ var RANDOM_COLORS = false; // randomize color of timeline labels
 var DEFAULT_COLOR = 0; // only works if RANDOM_COLORS is false
 var YEAR_COLOR = "rgb(73, 107, 190"; // color of the year dividers
 var RANDOM_SIDES = false; // randomize side timeline events are on
-var CHRONOLOGICAL = false; // false for oldest first; true for newest first
+var CHRONOLOGICAL = true; // false for newest first; true for oldest first
 var YEAR_DIVIDERS = true; // false for no year dividers; true for year dividers
 var MONTH_DIVIDERS = true; // false for no month dividers; true for month dividers
 var DATA_FILES = ["data/events.json"]; // because bad code you can only have 1 file rn, if you add more files you risk the timeline breaking!
@@ -90,7 +90,11 @@ function loadedData(data) {
 
   // sort events by date
   data.sort(function (a, b) {
-    return CHRONOLOGICAL ? a["date"] < b["date"] : a["date"] > b["date"];
+    if (CHRONOLOGICAL) {
+      return a["date"] - b["date"];
+    } else {
+      return b["date"] - a["date"];
+    }
   });
 
   container.append('<div id="timeline"></div>');

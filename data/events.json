@@ -550,12 +550,32 @@
     "date": "8/20/22",
     "links": []
   },
-  
+
+  {
+    "name": "CatCalledDog passed away",
+    "image": "",
+    "description": "It was publicly announced that CatCalledDog, a PA youtuber and well known player passed away.",
+    "date": "9/1/22",
+    "links": [
+      [
+        "CCD channel",
+        "https://www.youtube.com/channel/UCOjbOh6QM0Rj4J8JYNggdxQ"
+      ]
+    ]
+  },
   {
     "name": "Lemuria II was griefed",
     "image": "",
     "description": "Base members: MrBreakNFix, Octaborg, acap__ Griefed by: 87ac!",
     "date": "9/13/22",
+    "links": []
+  },
+
+  {
+    "name": "The server gets a new AntiCheat",
+    "image": "",
+    "description": "",
+    "date": "10/8/22",
     "links": []
   }
 ]
