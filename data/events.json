@@ -577,5 +577,12 @@
     "description": "",
     "date": "10/8/22",
     "links": []
+  },
+  {
+    "name": "A lava wall is created at spawn",
+    "image": "",
+    "description": "The lava wall is from 1500 to -1500. Made by: Zergatul",
+    "date": "10/18/22",
+    "links": []
   }
 ]
