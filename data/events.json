@@ -595,9 +595,25 @@
 
   {
     "name": "Spooky Savannah III",
-    "image": "",
+    "image": "Frat-Event-5.png",
     "description": "The Fraternity organized thir annual hallowen event!",
     "date": "11/5/22",
+    "links": []
+  },
+  {
+    "name": "Lavacast Competition 2022",
+    "image": "",
+    "description": "Lavacast have to be within 1k radius from spawn to count. Shape, Size and Height are taken into account! The bigger the better! Given the popularity of the competition last year, winning team will probably have done several lavacasts Prize = A special Dumbledore bucket for the winner",
+    "date": "11/21/22",
+    "links": [
+      ["More Info", "https://discord.com/channels/860131105863499776/860134565560713236/1044162815801425990"]
+    ]
+  },
+  {
+    "name": "Thanksgiving",
+    "image": "",
+    "description": "",
+    "date": "11/24/22",
     "links": []
   }
 ]
