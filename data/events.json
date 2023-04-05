@@ -97,7 +97,7 @@
   {
     "name": "YouHuntHard bombs spawn",
     "image": "Spawn-Bomb.png",
-    "description": "Hunt used TNT dupers to destory a 125 x 4000 block area of spawn.",
+    "description": "Hunt used TNT dupers to destroy a 125 x 4000 block area of spawn.",
     "date": "8/1/21",
     "links": []
   },
@@ -109,7 +109,7 @@
     "links": []
   },
   {
-    "name": "The server laged so much it hit 2 players",
+    "name": "The server lagged so much it hit 2 players",
     "image": "New-Low.png",
     "description": "",
     "date": "8/7/21",
@@ -287,7 +287,7 @@
     "links": []
   },
   {
-    "name": "A 4k Spawwn render made by Creeper0",
+    "name": "A 4k Spawn render made by Creeper0",
     "image": "First-Big-Spawn-Render.png",
     "description": "",
     "date": "1/11/22",
@@ -308,7 +308,7 @@
     "links": []
   },
   {
-    "name": "Phoenix Anarcy updated to 1.18.1",
+    "name": "Phoenix Anarchy updated to 1.18.1",
     "image": "",
     "description": "Dumbledore posted in the PA timeline when the PA updated.",
     "date": "1/19/22",
@@ -320,7 +320,7 @@
     ]
   },
   {
-    "name": "First 1.18 advancment",
+    "name": "First 1.18 advancement",
     "image": "First-1.18-Advancment.jpg",
     "description": "Made by: Mitch023",
     "date": "1/19/22",
@@ -358,7 +358,7 @@
   {
     "name": "Goblin city was griefed",
     "image": "Goblin-City.png",
-    "description": "grifed by: Radial and Melsidious",
+    "description": "griefed by: Radial and Melsidious",
     "date": "2/5/22",
     "links": []
   },
@@ -465,7 +465,7 @@
     "links": []
   },
   {
-    "name": "Sleepylessons spoted",
+    "name": "Sleepylessons spotted",
     "image": "",
     "description": "Sleepylessons joined the PA discord",
     "date": "6/27/22",
@@ -510,7 +510,7 @@
   {
     "name": "Donfuer base griefed",
     "image": "Donfuer-Base-Griefed.png",
-    "description": "Grifed by: Kn0t_mc and 86ac",
+    "description": "Griefed by: Kn0t_mc and 86ac",
     "date": "7/27/22",
     "links": []
   },
@@ -596,7 +596,7 @@
   {
     "name": "Spooky Savannah III",
     "image": "Frat-Event-5.png",
-    "description": "The Fraternity organized thir annual hallowen event!",
+    "description": "The Fraternity organized their annual halloween event!",
     "date": "11/5/22",
     "links": []
   },
@@ -614,6 +614,46 @@
     "image": "",
     "description": "",
     "date": "11/24/22",
+    "links": []
+  },
+
+  {
+    "name": "Christmas",
+    "image": "",
+    "description": "",
+    "date": "12/25/22",
+    "links": []
+  },
+
+  {
+    "name": "First month with nothing happening",
+    "image": "",
+    "description": "🤔",
+    "date": "1/31/23",
+    "links": []
+  },
+
+  {
+    "name": "Server is declared dead",
+    "image": "",
+    "description": "Server reaches record low players, with periods of 0 players online.",
+    "date": "2/1/23",
+    "links": []
+  },
+
+  {
+    "name": "Dumbledore returns!",
+    "image": "",
+    "description": "Dumbledore returns to the server. Revival?",
+    "date": "3/18/23",
+    "links": []
+  },
+
+  {
+    "name": "Fraternity April Fools Event",
+    "image": "",
+    "description": "Racism Convention 2023",
+    "date": "4/1/23",
     "links": []
   }
 ]
